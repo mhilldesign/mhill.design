@@ -97,7 +97,7 @@ a {
     width: 10%;
     height: 100%;
     max-width: 360px;
-    background-image: url("images/plaid.png");
+    background-image: url("plaid.png");
     background-repeat: repeat;
     background-size: 40%;
     position: fixed;
