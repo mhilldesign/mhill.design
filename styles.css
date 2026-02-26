@@ -128,13 +128,15 @@ a {
 }
 
 .column img {
-  margin-top: 8px;
+  margin-top: 40px;
   vertical-align: middle;
-  width: 100%;
+  width: 80%;
+  border: dashed #a83429 2px;
 }
 
 .container {
   position: relative;
+  width: fit-content;
 }
 
 .overlay {
@@ -143,30 +145,46 @@ a {
   bottom: 0;
   left: 0;
   right: 0;
-  height: 100%;
-  width: 100%;
+  height: auto;
+  width: 80%;
+  display: flex;
+  flex: wrap;
+  justify-content: space-around;
   opacity: 0;
+  margin-top: 40px;
   transition: .5s ease;
   background-color: #292847;
 }
 
 .container:hover .overlay {
   opacity: 1;
+  width: 82%;
 }
 
 .text {
   color: #ebdcc7;
   font-family: "VT323", monospace;
   font-weight: 400;
-  font-size: 30px;
+  font-size: 25px;
   font-style: normal;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
   text-align: center;
+  margin-top: 20%;
+  margin-bottom: 20%;
+}
+
+.textsmall {
+  color: #ebdcc7;
+  font-family: "VT323", monospace;
+  font-weight: 400;
+  font-size: 20px;
+  font-style: normal;
+  text-align: center;
+}
+
+.textbox {
+  text-align: center;
+  margin-top: 50%;
+  width: 75%;
 }
 
 .project {
