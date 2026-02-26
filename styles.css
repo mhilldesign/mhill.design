@@ -206,7 +206,7 @@ a {
   width: 100%;
   background: #292847;
   animation: 1.5s rotate reverse linear infinite ;
-
+  z-index: 900;
 }
 @keyframes rotate {
   0%{    transform: rotate(0deg)}
@@ -221,4 +221,37 @@ a {
   height: 100%;
   max-height: 950px;
   z-index: -1;
+}
+
+.title {
+  margin-top: 10%;
+  margin-left: 25%;
+  width: 50%;
+  font-family: "DotGothic16", sans-serif;
+  font-size: 130%;
+  font-weight: 400;
+  font-style: normal;
+  z-index: 2;
+}
+
+.blurb {
+  margin-top: 10%;
+  margin-left: 25%;
+  width: 50%;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 120%;
+  font-weight: 400;
+  font-style: normal;
+  z-index: 2;
+}
+
+.mag {
+    display: block;
+    margin-left: 15%;
+    margin-right: auto;
+    width: 70%;
+    max-width: 1440px;
+    padding-top: 168px;
+    text-align: center;
+    z-index: 2;
 }
