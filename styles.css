@@ -183,7 +183,7 @@ a {
 
 .textbox {
   text-align: center;
-  margin-top: 50%;
+  margin-top: 25%;
   width: 75%;
 }
 
@@ -272,4 +272,135 @@ a {
     padding-top: 168px;
     text-align: center;
     z-index: 2;
+}
+
+.cattab {
+    display: block;
+    margin-left: 12%;
+    margin-right: auto;
+    width: 70%;
+    max-width: 500px;
+    padding-top: 168px;
+    position: absolute;
+    left: 0;
+    z-index: 2;
+    font-family: "VT323", monospace;
+    font-weight: 400;
+    font-style: normal;
+    color: #292847;
+}
+
+.catcontent {
+    display: block;
+    margin-left: 35%;
+    margin-right: auto;
+    width: 70%;
+    max-width: 1000px;
+    padding-top: 168px;
+    position: absolute;
+    left: 0;
+    z-index: 2;
+    font-family: "VT323", monospace;
+    font-weight: 400;
+    font-style: normal;
+    color: #292847;
+    font-size: 22px;
+}
+
+li {
+  padding-bottom: 30px;
+  list-style: none;
+}
+
+.direct {
+    font-family: "DotGothic16", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    kerning: 5px;
+    color: #847a71;
+}
+
+.direct:hover {
+    padding-bottom: 30px;
+    list-style: none;
+    font-family: "DotGothic16", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    kerning: 5px;
+    color: #a83429;
+}
+
+.abouttab {
+  display: flex;;
+  justify-content: space-around;
+    margin-left: 15%;
+    width: 76%;
+    height: 400px;
+    margin-top: 15%;
+}
+
+.abouttext {
+    font-family: "VT323", monospace;
+    font-weight: 400;
+    font-style: normal;
+    color: #292847;
+    font-size: 20px;
+    width: 50%;
+}
+
+.aboutlinks {
+    display: flex;
+    margin-top: 10%;
+}
+
+.aboutimg {
+  padding-right: 10%;
+}
+
+.github {
+    width: 63pt;
+    height: 63pt;
+    margin-right: 20px;
+    background-image: url("link-logo-02.png");
+    background-size: 100% auto;
+}
+
+.github:hover {
+    width: 63pt;
+    height: 63pt;
+    margin-right: 20px;
+    background-image: url("link-logo-05.png");
+    background-size: 100% auto;
+}
+
+.linkedin {
+    width: 63pt;
+    height: 63pt;
+    margin-right: 20px;
+    background-image: url("link-logo-01.png");
+    background-size: 100% auto;
+}
+
+.linkedin:hover {
+    width: 63pt;
+    height: 63pt;
+    margin-right: 10%;
+    background-image: url("link-logo-04.png");
+    background-size: 100% auto;
+}
+
+.behance {
+    width: 63pt;
+    height: 63pt;
+    margin-right: 10%;
+    background-image: url("link-logo-03.png");
+    background-size: 100% auto;
+}
+
+.behance:hover {
+    width: 63pt;
+    height: 63pt;
+    margin-right: 10%;
+    background-image: url("link-logo-06.png");
+    background-size: 100% auto;
 }
