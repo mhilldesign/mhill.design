@@ -409,6 +409,31 @@ li {
   display: none;
 }
 
+footer {
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  margin-top: 100%;
+  padding-top: 10%;
+  padding-bottom: 5%;
+}
+
+.btt {
+  font-family: "VT323", monospace;
+    font-weight: 400;
+    font-style: normal;
+    color: #292847;
+    font-size: 2.5vw;
+}
+
+.credits {
+  font-family: "VT323", monospace;
+    font-weight: 400;
+    font-style: normal;
+    color: #292847;
+    font-size: 1.3vw;
+}
+
 
 /*mobile*/
 
