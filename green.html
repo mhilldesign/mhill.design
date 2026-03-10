@@ -17,12 +17,25 @@
         }
     </style>
     <body style="background-color: white;">
-        <nav>
-            <a href="index.html"><img src="logo.png" class="logo"></a>
-            <a href="index.html" class="link">Works</a>
-            <a href="categories.html" class="link">Categories</a>
-            <a href="about.html" class="link">About</a>
-        </nav>
+        <nav id="top">
+        <a href="index.html"><img src="logo.png" class="logo"></a>
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="index.html" class="active nav-link">Works</a>
+            </li>
+            <li class="nav-item">
+                <a href="categories.html" class="nav-link">Categories</a>
+            </li>
+            <li class="nav-item">
+                <a href="about.html" class="nav-link">About</a>
+            </li>
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
         <div class="greencontainer" style="text-align: center;">
             <div class="title">
             <h1>The Greenhouse Bakery</h1>
@@ -39,5 +52,19 @@ noise in favor of a more tranquil, natural mood.
             <img src="interactive-green-01.jpg" class="green">
             <img src="branding-green-02-01.jpg" class="green">
         </div>
+        <script>
+            const hamburger = document.querySelector(".hamburger")
+        const nav_menu = document.querySelector(".nav-menu")
+
+        hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+            nav_menu.classList.toggle("active");
+        })
+
+        document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+            hamburger.classList.remove("active");
+            nav_menu.classList.remove("active");
+        }))
+        </script>
     </body>
 </html>

@@ -21,14 +21,26 @@
 <body>
     <nav id="top">
         <a href="index.html"><img src="logo.png" class="logo"></a>
-        <a href="index.html" class="active link">Works</a>
-        <a href="categories.html" class="link">Categories</a>
-        <a href="about.html" class="link">About</a>
-        <div id="menu"></div>
-  </nav> 
-</div>
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="index.html" class="active nav-link">Works</a>
+            </li>
+            <li class="nav-item">
+                <a href="categories.html" class="nav-link">Categories</a>
+            </li>
+            <li class="nav-item">
+                <a href="about.html" class="nav-link">About</a>
+            </li>
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+    </div>
 
-<div class="menu-bg" id="menu-bg"></div>
+    <div class="menu-bg" id="menu-bg"></div>
     </nav>
     <div class="sidebar">
 
@@ -60,7 +72,8 @@
                     <a href="wordpress.html" class="overlay">
                         <div class="textbox">
                             <h1 class="text">Enigmatic Elixirs</h1>
-                            <p class="textsmall">This WordPress-hosted web shop carries scents for the strange and mysterious.</p>
+                            <p class="textsmall">This WordPress-hosted web shop carries scents for the strange and
+                                mysterious.</p>
                         </div>
                     </a>
                 </div>
@@ -71,8 +84,8 @@
                     <a href="green.html" class="overlay">
                         <div class="textbox">
                             <h1 class="text">The Greenhouse Bakery</h1>
-                            <p class="textsmall">This bakery aims to change cannabis branding with a personality
-                                dials down the noise in favor of a more tranquil, natural mood.</p>
+                            <p class="textsmall">This bakery aims to change cannabis branding with a personality that
+                                dials down the noise...</p>
                         </div>
                     </a>
                 </div>
@@ -81,7 +94,8 @@
                     <a href="comic.html" class="overlay">
                         <div class="textbox">
                             <h1 class="text">Constructing Community</h1>
-                            <p class="textsmall">When New York's low-income housing becomes dangerous for its inhabitants, one woman decides to take action and help tenants in need.</p>
+                            <p class="textsmall">When New York's low-income housing becomes dangerous for its
+                                inhabitants, one woman decides to...</p>
                         </div>
                     </a>
                 </div>
@@ -90,7 +104,8 @@
                     <a href="letterhead.html" class="overlay">
                         <div class="textbox">
                             <h1 class="text">Toxic Tavern</h1>
-                            <p class="textsmall">Here's your chance to bite back at the most venomous creatures the animal kingdom has to offer.</p>
+                            <p class="textsmall">Here's your chance to bite back at the most venomous creatures the
+                                animal kingdom has to offer.</p>
                         </div>
                     </a>
                 </div>
@@ -101,7 +116,8 @@
                     <a href="album.html" class="overlay">
                         <div class="textbox">
                             <h1 class="text">Motherboard</h1>
-                            <p class="textsmall">An expressive compilation album that doubles as love letter to female electronic musicians.</p>
+                            <p class="textsmall">An expressive compilation album that doubles as love letter to female
+                                electronic musicians.</p>
                         </div>
                     </a>
                 </div>
@@ -118,10 +134,24 @@
         </div>
     </div>
     <footer>
-        <a href="https://mhill.design/index.html#top"><p class="btt">Back to Top</p></a>
+        <a href="https://mhill.design/index.html#top">
+            <p class="btt">Back to Top</p>
+        </a>
         <p class="credits">Moira Hill | 2026</p>
     </footer>
     <script>
+        const hamburger = document.querySelector(".hamburger")
+        const nav_menu = document.querySelector(".nav-menu")
+
+        hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+            nav_menu.classList.toggle("active");
+        })
+
+        document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+            hamburger.classList.remove("active");
+            nav_menu.classList.remove("active");
+        }))
     </script>
 </body>
 

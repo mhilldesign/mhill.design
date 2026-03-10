@@ -15,22 +15,55 @@
     <title>Moira Hill Design</title>
 </head>
 <style>
-    body{background-color: white;}
+    body {
+        background-color: white;
+    }
 </style>
 
 <body>
-    <nav>
+    <nav id="top">
         <a href="index.html"><img src="logo.png" class="logo"></a>
-        <a href="index.html" class="link">Works</a>
-        <a href="categories.html" class="link">Categories</a>
-        <a href="about.html" class="link">About</a>
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="index.html" class="active nav-link">Works</a>
+            </li>
+            <li class="nav-item">
+                <a href="categories.html" class="nav-link">Categories</a>
+            </li>
+            <li class="nav-item">
+                <a href="about.html" class="nav-link">About</a>
+            </li>
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
     </nav>
     <span id="loader"></span>
     <iframe class="fishbg" src="https://editor.p5js.org/mhill714/full/bMI5R3Wep" width="600px" height="400px"></iframe>
     <div class="white">
         <img src="fish-game-layout.png" class="project" style="width: 60%; margin-left: 20%;">
     </div>
+    <a target="_blank" href="https://editor.p5js.org/mhill714/full/bMI5R3Wep">
+        <button class="fishbutton">
+            <p class="textcontainer">Click here to play Fish Game on the p5js editor. You can also play it on the background of this page!</p> 
+        </button>
+    </a>
     <script>
+        const hamburger = document.querySelector(".hamburger")
+        const nav_menu = document.querySelector(".nav-menu")
+
+        hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+            nav_menu.classList.toggle("active");
+        })
+
+        document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+            hamburger.classList.remove("active");
+            nav_menu.classList.remove("active");
+        }))
+
         let loader = document.getElementById('loader');
         window.onload = (event) => {
             setTimeout(function () {
