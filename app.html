@@ -21,11 +21,24 @@
 </style>
 
 <body>
-    <nav>
+    <nav id="top">
         <a href="index.html"><img src="logo.png" class="logo"></a>
-        <a href="index.html" class="link">Works</a>
-        <a href="categories.html" class="link">Categories</a>
-        <a href="about.html" class="link">About</a>
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="index.html" class="active nav-link">Works</a>
+            </li>
+            <li class="nav-item">
+                <a href="categories.html" class="nav-link">Categories</a>
+            </li>
+            <li class="nav-item">
+                <a href="about.html" class="nav-link">About</a>
+            </li>
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
     </nav>
     <div class="mag">
         <div class="title">
@@ -42,6 +55,20 @@ party and travel through a series of questions that shapes a collaborative story
             <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="1000" height="562.5" src="https://embed.figma.com/proto/gfMuzk2JjgPNwTsg4bex1g/interactive-app?node-id=65-426&p=f&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=65%3A426&embed-host=share" allowfullscreen></iframe>
         </div>
     </div>
+    <script>
+            const hamburger = document.querySelector(".hamburger")
+        const nav_menu = document.querySelector(".nav-menu")
+
+        hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+            nav_menu.classList.toggle("active");
+        })
+
+        document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+            hamburger.classList.remove("active");
+            nav_menu.classList.remove("active");
+        }))
+        </script>
 </body>
 
 </html>
