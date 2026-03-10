@@ -456,6 +456,29 @@ footer {
     margin-left: 17%;
 }
 
+.green {
+  width: 100%;
+}
+
+.greencontainer {
+  margin-top: 20vh;
+  width: 75%;
+  margin-left: 15%;
+  background-color: white;
+}
+
+.sidebyside {
+  width: 75%;
+  margin-left: 15%;
+  display: flex;
+}
+
+.greenimg {
+ width: 50%;
+ height: auto;
+}
+
+
 
 /*mobile*/
 
