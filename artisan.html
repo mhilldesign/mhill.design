@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script source="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" type="image/png" href="logo.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DotGothic16&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=VT323&display=swap"
+        rel="stylesheet">
+    <title>Moira Hill Design</title>
+</head>
+<style>
+    body {
+        background-color: white;
+    }
+</style>
+
+<body>
+    <nav id="top">
+        <a href="index.html"><img src="logo.png" class="logo"></a>
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="index.html" class="active nav-link">Works</a>
+            </li>
+            <li class="nav-item">
+                <a href="categories.html" class="nav-link">Categories</a>
+            </li>
+            <li class="nav-item">
+                <a href="about.html" class="nav-link">About</a>
+            </li>
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+    <div class="mag">
+        <div class="title">
+            <h1>Artisan's Archive</h1>
+        </div>
+        <div class="blurb">
+            <p>There are an incredible range of craft skills practiced by some of the best craftspeople in the world, but many of these skills are in the hands of individuals who have been unable to pass them on and keep their craft alive.
+Heritage Crafts Red List of Endangered Crafts, first published in 2017, was the first report of its kind to rank traditional crafts by the likelihood they would survive to the next generation. Based on this list, Artisan’s Archive aims to keep these crafts alive by providing tutorials directly from artisans themselves. Keeping history alive has never been so fun!
+            </p>
+        </div>
+        <div style="z-index: 2;margin-top:10%;">
+            <video controls muted loop style="width: 80%; border-radius: 10px; border: 1px solid rgba(0, 0, 0, 0.1);">
+                <source src="artisan_video.mp4" type="video/mp4">
+            </video>
+        </div>
+         <img src="style_guide.jpg" class="green" style="width: 75%; padding-top: 5%;">
+        <div style="z-index: 2;margin-top:10%;">
+            <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/proto/79qkApAEKroybybYpAJPrg/artisan-s-archive?node-id=5489-1616&scaling=min-zoom&content-scaling=fixed&page-id=5489%3A1615&starting-point-node-id=5489%3A1616&embed-host=share" allowfullscreen></iframe>
+        </div>
+        <div style="z-index: 2;margin-top:10%; padding-bottom: 10%;">
+            <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/proto/79qkApAEKroybybYpAJPrg/artisan-s-archive?node-id=5579-700&starting-point-node-id=5579%3A700&embed-host=share" allowfullscreen></iframe>
+        </div>
+    </div>
+    <script>
+            const hamburger = document.querySelector(".hamburger")
+        const nav_menu = document.querySelector(".nav-menu")
+
+        hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+            nav_menu.classList.toggle("active");
+        })
+
+        document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+            hamburger.classList.remove("active");
+            nav_menu.classList.remove("active");
+        }))
+        </script>
+</body>
+
+</html>
